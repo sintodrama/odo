@@ -11,6 +11,20 @@ div {
     overflow: hidden;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 img {
     max-width: 100%;
     height: auto;
@@ -56,27 +70,21 @@ img {
     color: #FFF;
 }
 .albumimg-section {
-    height: 100%;
+    height: 150%;
     padding-top: 0px;
-    text-align: center;
     background: rgb(43, 41, 41);
 }
 .about-section {
-    height: 100%;
-    padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
+    height: 150%;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 20px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 15px;
     background: #c9c9c9;
 }
 .about-text {
 	margin-left: 10px;
-}
-#about p {
-	color: rgba(25,25,25,1);
-	margin-top: 20px;
-	margin-bottom: 30px;
 }
 .whatwedo-section {
     height: 100%;
@@ -122,6 +130,10 @@ i.fa:hover {
 
 /* Media Queries */
 @media(min-width:768px) {
+    .albumimg-section {
+        height: 100%;
+    }
+
     .intro {
         height: 100%;
         padding: 0;
@@ -228,5 +240,12 @@ i.fa:hover {
         padding: 10px 100px 20px 20px;
     }
     }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
 
 
