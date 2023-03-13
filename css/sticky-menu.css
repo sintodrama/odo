@@ -6,6 +6,11 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+
+div {
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     height: auto;
