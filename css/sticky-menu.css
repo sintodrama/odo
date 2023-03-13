@@ -65,6 +65,14 @@ img {
     font-size: 16px;
     background: #c9c9c9;
 }
+.about-text {
+	margin-left: 10px;
+}
+#about p {
+	color: rgba(25,25,25,1);
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
 .whatwedo-section {
     height: 100%;
     padding-top: 150px;
