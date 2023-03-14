@@ -28,7 +28,7 @@ div {
 img {
     max-width: 100%;
     height: auto;
-    margin: 50px 0;
+    margin: 0 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -73,6 +73,7 @@ img {
     height: 150%;
     padding-top: 0px;
     background: rgb(43, 41, 41);
+    margin-top: 50px;
 }
 .about-section {
     height: 150%;
@@ -80,7 +81,7 @@ img {
     padding-left: 0px;
     padding-right: 20px;
     text-align: justify;
-    font-size: 15px;
+    font-size: 14px;
     background: #c9c9c9;
 }
 .about-text {
